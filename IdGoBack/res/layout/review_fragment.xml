@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:isIndicator="true"
+        android:scaleX="0.85"
+        android:scaleY="0.85" />
+    
+     <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginTop="0dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/review_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ratingBar"
+        android:layout_marginTop="9dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:layout_toRightOf="@+id/ratingBar"/>
+
+    <Button
+        android:id="@+id/add_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/review_count"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="2dp"
+        android:text="@string/review_button" 
+        android:background="@drawable/button_shape"/>
+
+    <ListView
+        android:id="@+id/reviewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:divider="@color/blue"
+        android:dividerHeight="2sp"
+        android:layout_below="@+id/ratingBar" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/add_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/add_date" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_date"
+        android:layout_below="@+id/textdate"
+        android:layout_marginTop="24dp"
+        android:text="@string/rate" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        style="@style/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textdate"
+        android:layout_alignTop="@+id/rate"
+        android:scaleX="0.85"
+        android:scaleY="0.85" />
+
+    <TextView
+        android:id="@+id/textReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rate"
+        android:layout_below="@+id/ratingBar1"
+        android:text="@string/review" />
+
+    <TextView
+        android:id="@+id/textdate"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_date"
+        android:layout_alignBottom="@+id/add_date"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:textIsSelectable="false"
+        android:ems="10">
+    </TextView>
+
+    <EditText
+        android:id="@+id/userReview"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:layout_alignLeft="@+id/textReview"
+        android:layout_below="@+id/textReview"
+        android:ems="10"
+        android:maxLines="5"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

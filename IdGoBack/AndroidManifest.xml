@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="calpoly.csc.idgoback"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+  
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    
+    <application
+        android:icon="@drawable/idgoback"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:allowBackup="true">
+        <activity
+            android:name="calpoly.csc.idgoback.Welcome"
+            android:label="@string/title_activity_main_ui">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="calpoly.csc.idgoback.MainUI"></activity>
+        <activity android:name="calpoly.csc.idgoback.ItemList"></activity>
+        <activity android:name="calpoly.csc.idgoback.InfoDetail"></activity>
+        <activity android:name="calpoly.csc.idgoback.LogIn"></activity>
+        <activity android:name="calpoly.csc.idgoback.SignUp"></activity>
+        <activity android:name="calpoly.csc.idgoback.FullImageActivity"></activity>
+        <activity android:name="calpoly.csc.idgoback.UploadPhoto"></activity>
+        <activity android:name="calpoly.csc.idgoback.OnlinePhotoLibrary"></activity>
+        <activity android:name="calpoly.csc.idgoback.PictureHandler"></activity>
+        <activity android:name="calpoly.csc.idgoback.PictureHandlerWithFB"></activity>
+        <activity android:name="calpoly.csc.idgoback.TermCondition"></activity>
+        <activity android:name="calpoly.csc.idgoback.Privacy"></activity>
+        <activity android:name="calpoly.csc.idgoback.UpLoadWithoutFB"></activity>
+        <meta-data android:value="@string/app_id" android:name="com.facebook.sdk.ApplicationId"/>
+        <activity android:name="com.facebook.LoginActivity" android:label="@string/app_name"></activity>
+    </application>
+    
+ 
+    
+   
+   
+
+</manifest>

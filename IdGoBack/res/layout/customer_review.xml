@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textIsSelectable="false"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/customer_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/customer_name"
+        android:layout_below="@+id/customer_name"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/customer_review"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/customer_date"
+        android:layout_below="@+id/customer_date"
+        android:layout_marginTop="26dp"
+        android:lines="10"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textIsSelectable="false"
+        android:textColor="#000000" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:isIndicator="true"
+        android:layout_alignTop="@+id/customer_name"
+        android:scaleX="0.6"
+        android:scaleY="0.6" 
+        style ="@style/ratingBar"/>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">I\'d Go Back</string>
+    <string name="title_activity_main_ui">IdGoBack</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Facebook ID App -->
+    <string name="app_id">615021355190403</string>
+
+    <!-- Welcome class -->
+    <string name="welcome">Share the places you</string>
+    <string name="welcome1">would Go Back to</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    
+    <!-- LogIn class -->
+    <string name="log_in">Log In</string>
+    <string name="log_in_error">Invalid username or password</string>
+    <string name="login_Username">Username</string>
+    <string name="login_Password">Password</string>
+    <string name="forgotPassword">Forgot your password?</string>
+    
+    <!-- SignUp class -->
+    <string name="signUp_Email">Email</string>
+    <string name="signUp_facebook_string">Sign Up with Facebook</string>
+    <string name="signUp_phone_string">Phone</string>
+    <string name="sign_up_error">Username, password and email required</string>
+    <string name="termCondition">Term and Condition</string>
+    
+    <!-- TermCondition class -->
+    <string name="term_title">Term and Condition</string>
+    <string name="ability_to_accept">Ability to Accept Terms of Service:</string>
+    <string name="agreement">Agreement to Be Bound:</string>
+    <string name="use_site_content">Use of Site Content:</string>
+    <string name="condition_for_submission">Condition for Submission:</string>
+    <string name="posting_transmitting_content">Posting and Transmitting Content:</string>
+    <string name="user_grant_license">User Grant of License:</string>
+    <string name="indemnity">Indemnity:</string>
+    <string name="legal_general">Legal/General:</string>
+    
+    <!-- ExploreUI class -->
+    <string name="location">Location</string>
+    <string name="type">Type</string>
+    <string name="explore">Explore</string> 
+    <string name="sort_by">Sort by</string>
+    <string name="sort_by_rating">Rating</string>
+    <string name="sort_by_distance">Distance</string> 
+    
+    <!-- CameraUI class -->
+    <string name="camera_button_text">Camera Button</string>
+    <string name="uploadFacebook">Upload to Facebook</string>
+    <string name="save_pic">Save Photo</string>
+    
+    <!-- HomeUI class -->
+    <string name="invite_to_idgoback">Invite to IdGoBack</string>
+    <string name="sign_out">Sign out</string>
+    <string name="camera">Camera</string>
+    <string name="cancel">Cancel</string>
+    <color name="gray">#474747</color>
+    <string name="photo_profile">Photo Profile</string>
+    <string name="album">Choose From Album</string>
+    <string name="from_online">Choose From Online Library</string>
+    <string name="privacy">Privacy</string>
+    
+    <!-- InfoFragment class -->
+    <string name="address">Address</string>
+    <string name ="contact">Contact</string>
+    <string name ="hour">Hours</string>
+    <string name ="direction">Direction</string>
+    
+    <!-- ReviewFragment class -->
+    <string name="review_button">Add review</string>
+    <color name="blue">#67C8FF</color>
+    
+    <!-- Add review button -->
+    <string name="add_date">Date</string>
+    <string name="rate">Rating</string>
+    <string name="review">Review:</string>
+    
+    <!-- UploadPhoto class -->
+    <string name="upload">Upload</string>
+    <string name="add_reviews">Add your review.</string>
+    
+    <!-- FullImageActivity class -->
+    <string name="full_image">Full Image</string>
+    
+    <!-- PictureHandlerFragment class -->
+    <string name="string_savePic">Save Picture to \'Id Go Back\'</string>
+    <string name="string_backHome">Home</string>
+    
+    <!-- Privacy class -->
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_info">We take your privacy seriously:</string>
+    <string name="collection_information">Collection of Information:</string>
+    <string name="how_to_collect">How we do not collect information:</string>
+    <string name="use_info">Use of Information:</string>
+    <string name="internal_marketing">Internal Marketing Uses:</string>
+    <string name="sharing_info">Sharing information:</string>
+    <string name="ca_privacy">California Privacy Rights:</string>
+    <string name="changes_policy">Changes to our Privacy Policy:</string>
+    
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/ph_displayImage"
+        android:layout_width="320dp"
+        android:layout_height="340dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ph_displayImage"
+        android:ems="10"
+        android:hint="@string/add_reviews"
+        android:background="#FFFFFF"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_savePic"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/save_pic"
+        android:background="@drawable/button_shape"/>
+
+      <Button
+          android:id="@+id/button_uploadFacebook"
+          android:layout_width="115dp"
+          android:layout_height="40dp"
+          android:layout_alignLeft="@+id/button_savePic"
+          android:layout_below="@+id/button_savePic"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/facebook_share" />
+
+      <Button
+          android:id="@+id/button_uploadTwitter"
+          android:layout_width="115dp"
+          android:layout_height="40dp"
+          android:layout_alignLeft="@+id/ph_backButton"
+          android:layout_below="@+id/ph_backButton"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/twitter_share" />
+
+      <Button
+          android:id="@+id/ph_backButton"
+          android:layout_width="115dp"
+          android:layout_height="40dp"
+          android:layout_alignBaseline="@+id/button_savePic"
+          android:layout_alignBottom="@+id/button_savePic"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="35dp"
+          android:text="@string/string_backHome" 
+          android:background="@drawable/button_shape"/>
+    
+</RelativeLayout>

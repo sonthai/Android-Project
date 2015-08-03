@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <QuickContactBadge
+        android:id="@+id/badge"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/photo_profile"
+        android:src="@drawable/contact" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/badge"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/badge"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textIsSelectable="false" />
+    
+	<TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/badge"
+        android:textIsSelectable="false"/>
+
+    <TextView
+        android:id="@+id/invite_to_idgoback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/badge"
+        android:layout_below="@+id/badge"
+        android:layout_marginTop="26dp"
+        android:text="@string/invite_to_idgoback"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/inviteOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/invite_to_idgoback"
+        android:layout_below="@+id/invite_to_idgoback"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/border_ui"
+        android:dividerHeight="1sp"
+        android:scrollbars="none" >
+    </ListView>
+    
+    <TextView
+        android:id="@+id/privacy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/inviteOptions"
+        android:layout_alignRight="@+id/inviteOptions"
+        android:layout_marginTop="330dp"
+        android:text="@string/privacy"
+        android:textSize="20sp"
+        android:background="@drawable/button_shape"
+        android:gravity="center" >
+        
+    </TextView>
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inviteOptions"
+        android:layout_alignRight="@+id/inviteOptions"
+        android:layout_marginTop="380dp"
+        android:text="@string/sign_out" />
+</RelativeLayout>

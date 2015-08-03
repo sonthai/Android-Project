@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top" >
+
+    <EditText
+        android:id="@+id/signUp_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/login_Username"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/signUp_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUp_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/login_Password"
+        android:ems="10"
+        android:inputType="textPassword" />
+    
+   	<EditText
+        android:id="@+id/signUp_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUp_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/signUp_Email"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+   	
+   	<EditText
+        android:id="@+id/signUp_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUp_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/signUp_phone_string"
+        android:ems="10" 
+        android:inputType="phone" />
+   	   	
+    <Button
+        android:id="@+id/login_loginButt"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/signUp_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="@string/login_Username"
+        android:onClick="signUp"
+        android:text="@string/sign_up" />
+
+    <TextView
+        android:id="@+id/loginError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/login_loginButt"
+        android:text="@string/sign_up_error"
+        android:textSize="15sp"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/termCond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_loginButt"
+        android:textSize="15sp"
+        android:textStyle="bold"
+		android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/login_loginButt"
+        android:layout_marginBottom="22dp"
+        android:onClick="termCondition"
+        android:gravity="center_horizontal"
+        android:text="@string/termCondition" />
+
+</RelativeLayout>
